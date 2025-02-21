@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuddhvir Singh - Web Developer</title>
+    <meta name="description" content="Web Developer, Front-End Developer, and Technology Enthusiast" />
+    <meta name="author" content="Ritik Singh" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn.pixelcave.com/favicon.svg" sizes="any" type="image/svg+xml" />
+
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.bunny.net/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      const defaultTheme = tailwind.defaultTheme;
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+              primary: "#4F46E5",  // Purple
+              secondary: "#6B7280", // Gray
+              darkBg: "#121212",    // Dark Background
+              lightText: "#F4F4F4", // Light Text for contrast
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-darkBg text-lightText font-sans">
+
+    <!-- Page Container -->
+    <div class="min-h-screen flex flex-col p-8 bg-gradient-to-r from-indigo-700 to-indigo-900">
+
+      <!-- Header Section -->
+      <div class="container mx-auto max-w-screen-lg p-6 lg:p-12 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="text-center md:text-left md:col-span-1">
+            <img class="rounded-full w-32 mx-auto md:w-48 shadow-lg" src="assets/photo-portrait-unsplash-7YVZYZeITc8.jpg" alt="Ritik Singh" />
+            <div class="mt-6 space-y-4 text-lightText">
+              <p class="text-lg font-semibold">Varanasi, India</p>
+              <p class="text-lg font-semibold">+91 63075141xx</p>
+              <p>
+                <a class="font-medium text-primary hover:text-indigo-400" href="mailto:raghuvansiritik9648@gmail.com">yuddhvirsingh1998@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Intro Section -->
+          <div class="md:col-span-2">
+            <h1 class="text-4xl font-bold leading-tight text-lightText">Yuddhvvir  Singh</h1>
+            <h2 class="text-2xl text-primary mt-2">Web Developer</h2>
+            <div class="my-5 h-1 rounded bg-primary w-24 mx-auto"></div>
+            <p class="text-lg text-lightText leading-relaxed mt-6">
+              I'm a skilled web developer with expertise in HTML, CSS, and JavaScript. I create visually appealing, user-friendly websites with a focus on performance and accessibility.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <section id="about-me" class="container mx-auto max-w-screen-lg p-6 lg:p-12 space-y-12 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg mt-12">
+        <h2 class="text-3xl font-bold text-primary">About Me</h2>
+        <p class="text-lightText text-lg">
+          I am a passionate and motivated web developer from Varanasi, India, with a keen interest in creating beautiful and functional websites. I believe in continuous learning and strive to stay up-to-date with the latest technologies and trends in the web development industry.
+        </p>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="container mx-auto max-w-screen-lg p-6 lg:p-12 space-y-12 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg mt-12">
+        <h2 class="text-3xl font-bold text-primary">Education</h2>
+        <div>
+          <h4 class="text-primary text-lg font-semibold">2019-2022</h4>
+          <h5 class="font-bold text-lightText">Bachelor in Computer Applications, Jeevandeep Mahavidyalaya, Varanasi, India</h5>
+          <p class="text-lightText">I developed a solid foundation in programming and web development during my undergraduate studies.</p>
+        </div>
+        <div>
+          <h4 class="text-primary text-lg font-semibold">2023-2025</h4>
+          <h5 class="font-bold text-lightText">Master in Computer Applications, Galgotias University, India</h5>
+          <p class="text-lightText">Currently pursuing my Master's degree to further enhance my skills in web technologies and software development.</p>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="container mx-auto max-w-screen-lg p-6 lg:p-12 space-y-12 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg mt-12">
+        <h2 class="text-3xl font-bold text-primary">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="skill-item">
+            <h5 class="text-primary font-semibold">HTML</h5>
+            <p class="text-lightText">Advanced knowledge of HTML5, semantic elements, and structuring web content.</p>
+          </div>
+          <div class="skill-item">
+            <h5 class="text-primary font-semibold">CSS</h5>
+            <p class="text-lightText">Expertise in CSS3, including Flexbox, Grid, and animations for responsive layouts.</p>
+          </div>
+          <div class="skill-item">
+            <h5 class="text-primary font-semibold">JavaScript</h5>
+            <p class="text-lightText">Proficient in JavaScript for creating dynamic and interactive web pages.</p>
+          </div>
+          <div class="skill-item">
+            <h5 class="text-primary font-semibold">React</h5>
+            <p class="text-lightText">Experienced in building dynamic and single-page applications with ReactJS.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="container mx-auto max-w-screen-lg p-6 lg:p-12 space-y-12 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg mt-12">
+        <h2 class="text-3xl font-bold text-primary">Projects</h2>
+        <div>
+          <h4 class="text-primary text-lg font-semibold">Online Cloth    Order Website</h4>
+          <p class="text-lightText">
+            Developed a responsive web application for ordering food online with features like secure payment integration and real-time order tracking.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-primary text-lg font-semibold">Personal Portfolio</h4>
+          <p class="text-lightText">
+            A fully responsive personal portfolio built with HTML, CSS, and JavaScript to showcase my skills and projects.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Info Section -->
+      <section id="contact" class="container mx-auto max-w-screen-lg p-6 lg:p-12 space-y-12 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg mt-12">
+        <h2 class="text-3xl font-bold text-primary">Contact Info</h2>
+        <div class="space-y-4">
+          <p class="text-lightText text-lg">You can reach out to me via email or phone:</p>
+          <ul class="space-y-2">
+            <li class="text-lightText text-lg"><strong>Email:</strong> <a href="mailto:yuddhvirsingh1998@gmail.com" class="text-indigo-600 hover:text-indigo-400">raghuvansiritik9648@gmail.com</a></li>
+            <li class="text-lightText text-lg"><strong>Phone:</strong> +91 63075141xx</li>
+          </ul>
+        </div>
+        <!-- Social Media Links -->
+        <div class="space-y-4">
+          <p class="text-lightText text-lg">Connect with me on social media:</p>
+          <ul class="space-y-2">
+            <li>
+              <a href="https://www.linkedin.com/in/yuddhvir-singh-5950402b9" class="flex items-center text-blue-600 hover:text-blue-800">
+                <i class="fab fa-linkedin-in mr-2 text-lg"></i> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yuddhvir_singh" class="flex items-center text-pink-500 hover:text-pink-600">
+                <i class="fab fa-instagram mr-2 text-lg"></i> Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-8 text-center text-sm text-gray-400 mt-12">
+        <p class="font-semibold">
+          &copy; <script>document.write(new Date().getFullYear());</script> Yuddhvir Singh - All Rights Reserved
+        </p>
+        <p>
+          Crafted with <span class="text-rose-500">♥</span> by Yuddhvir Singh
+        </p>
+      </footer>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+  
+
+
